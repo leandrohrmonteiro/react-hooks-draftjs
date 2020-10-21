@@ -1,0 +1,71 @@
+.editor-general-appearance
+  background-color: #9b9b9b
+  width: 500px
+  margin: 50px auto
+  padding: 20px
+  border: solid
+  border-radius: 5px
+  border-width: 1px
+  
+.toolbar input[type="button"]
+  background-color: #303030
+  color: white
+  border-radius: 5px
+  cursor: pointer
+  margin-right: 2px
+  margin-bottom: 2px
+
+  &:active
+    transform: scale(0.95)
+
+  &:not(.active):hover
+    background-color: red
+    transition: 0.3s
+
+  &.active
+    background-color: red
+    border-color: transparent
+
+.draft-editor-wrapper
+  background-color: #303030
+  color: white
+  margin-top: 20px
+
+.public-DraftEditorPlaceholder-root
+  color: #9b9b9b
+
+.public-DraftEditor-content
+  height: 150px
+  overflow-y: auto
+
+#markdown-viewer
+  overflow-y: auto
+  
+
+textarea
+  padding: 0
+  resize: none
+  width: 500px
+  height: 150px
+  background-color: #303030
+  color: white
+  border: none
+  border-top: solid 1px #9b9b9b
+  &:focus
+    outline: none
+  
+
+#filename
+  background-color: #303030
+  color: white
+  margin-top: 10px
+  border: none
+
+  &::placeholder
+    color: #9b9b9b
+    opacity: 1
+
+  &:focus
+    outline: none
+
+
